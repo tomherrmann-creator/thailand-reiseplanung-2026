@@ -11,6 +11,7 @@
     <header class="hero">
       <nav class="topbar" aria-label="Hauptnavigation">
         <a href="#profil">Profil</a>
+        <a href="#route-map">Karte</a>
         <a href="#route">Route</a>
         <a href="#tage">Tage</a>
         <a href="#tauchen">Tauchen</a>
@@ -87,6 +88,60 @@
         <div class="section__heading">
           <p class="eyebrow">Route</p>
           <h2>Reisephasen</h2>
+        </div>
+        <div id="route-map" class="route-map" aria-label="Schematische Karte der Thailand-Reiseroute">
+          <div class="route-map__visual">
+            <svg viewBox="0 0 640 520" role="img" aria-labelledby="routeMapTitle routeMapDesc">
+              <title id="routeMapTitle">Schematische Thailandkarte mit Reiseroute</title>
+              <desc id="routeMapDesc">Route von Bangkok über Ayutthaya, Sukhothai, Khao Sok, Krabi, Koh Lanta und Chiang Mai zurück nach Bangkok.</desc>
+              <rect width="640" height="520" rx="16" class="map-sea"></rect>
+              <path class="map-land" d="M308 34c41 25 63 68 55 116-5 30 3 56 25 78 29 28 32 65 10 101-19 31-16 58 10 81l33 29c14 13 10 37-8 45-34 15-77-3-96-43-13-27-33-38-60-30-32 9-60-11-66-44-6-31 10-56 42-74 28-16 37-44 22-83-20-50-12-92 23-125 16-15 18-32 10-51Z"></path>
+              <path class="map-land map-land--south" d="M250 315c44 10 77 41 87 82 8 33-3 69-29 102-12 15-34 12-41-6-11-27-13-55-6-85 5-23 0-45-15-66-8-12-5-24 4-27Z"></path>
+              <path class="map-island" d="M281 446c18 12 25 29 20 50-19-6-31-20-36-42 4-5 9-8 16-8Z"></path>
+              <path class="route-line route-line--air" d="M390 205 364 173 306 105 258 393 301 433 288 463 235 56 390 205"></path>
+              <g class="map-stop is-start" transform="translate(390 205)">
+                <circle r="10"></circle>
+                <text x="18" y="5">Bangkok</text>
+              </g>
+              <g class="map-stop" transform="translate(364 173)">
+                <circle r="7"></circle>
+                <text x="-92" y="5">Ayutthaya</text>
+              </g>
+              <g class="map-stop" transform="translate(306 105)">
+                <circle r="7"></circle>
+                <text x="-84" y="-10">Sukhothai</text>
+              </g>
+              <g class="map-stop" transform="translate(258 393)">
+                <circle r="7"></circle>
+                <text x="-86" y="5">Khao Sok</text>
+              </g>
+              <g class="map-stop" transform="translate(301 433)">
+                <circle r="7"></circle>
+                <text x="16" y="5">Krabi/Railay</text>
+              </g>
+              <g class="map-stop" transform="translate(288 463)">
+                <circle r="7"></circle>
+                <text x="16" y="5">Koh Lanta</text>
+              </g>
+              <g class="map-stop" transform="translate(235 56)">
+                <circle r="7"></circle>
+                <text x="16" y="5">Chiang Mai</text>
+              </g>
+            </svg>
+          </div>
+          <div class="route-map__body">
+            <p class="eyebrow">Schematische Karte</p>
+            <h3>Vom Zentrum in den Süden, dann in den Norden</h3>
+            <p>Die Karte zeigt die geplante Reihenfolge der Stationen. Die langen Sprünge Sukhothai-Khao Sok, Koh Lanta-Chiang Mai und Chiang Mai-Bangkok sind als Flug-/Transferetappen zu verstehen.</p>
+            <ol class="route-list">
+              <li><span>1</span>Bangkok</li>
+              <li><span>2</span>Ayutthaya und Sukhothai</li>
+              <li><span>3</span>Khao Sok</li>
+              <li><span>4</span>Krabi/Railay und Koh Lanta</li>
+              <li><span>5</span>Chiang Mai</li>
+              <li><span>6</span>Bangkok-Finale</li>
+            </ol>
+          </div>
         </div>
         <div id="phaseGrid" class="phase-grid"></div>
       </section>
